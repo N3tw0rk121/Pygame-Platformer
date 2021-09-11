@@ -18,4 +18,4 @@ while True: #Loop
             sys.exit()
 
     pygame.display.update()
-    clock.tick(60)
+    clock.tick(40)
