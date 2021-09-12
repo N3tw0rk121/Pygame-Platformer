@@ -12,7 +12,11 @@ screen = pygame.display.set_mode(WINDOWS_SIZE,0,32)
 
 player_image = pygame.image.load ("assets\clown_main.png")
 
+
+
 while True: #Loop
+
+    screen.blit(player_image,(50,50))
 
     for event in pygame.event.get():
         if event.type == QUIT:
