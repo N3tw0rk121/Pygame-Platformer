@@ -6,7 +6,7 @@ clock = pygame.time.Clock()
 
 pygame.display.set_caption("PyPlatformer")
 
-WINDOWS_SIZE = (720, 1080)
+WINDOWS_SIZE = (400, 400)
 
 screen = pygame.display.set_mode(WINDOWS_SIZE,0,32)
 
