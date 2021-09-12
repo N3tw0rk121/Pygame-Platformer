@@ -10,6 +10,8 @@ WINDOWS_SIZE = (720, 1080)
 
 screen = pygame.display.set_mode(WINDOWS_SIZE,0,32)
 
+player_image = pygame.image.load ("assets\clown_main.png")
+
 while True: #Loop
 
     for event in pygame.event.get():
