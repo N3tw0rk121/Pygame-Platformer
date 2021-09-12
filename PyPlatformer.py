@@ -16,11 +16,18 @@ moving_right = False
 moving_left = False
 
 player_location = [50,50]
+player_vetical_momentum = 0
 
 while True: #Loop
     screen.fill((146,244,255))
 
     screen.blit(player_image,player_location)
+
+    if player_location[1] > WINDOWS_SIZE[1]-player_image.get_height() :
+        player_vetical_momentum = -player_vetical_momentum
+    else:
+        player_vetical_momentum += 0.2
+    player_location[1] += player_vetical_momentum
     
     if moving_right == True:
         player_location[0] += 4
@@ -45,3 +52,5 @@ while True: #Loop
 
     pygame.display.update()
     clock.tick(40)
+
+    input()
